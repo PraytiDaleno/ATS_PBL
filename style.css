@@ -1,0 +1,194 @@
+/* =========================
+   RESET
+========================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* =========================
+   ROOT COLOR (PALET)
+========================= */
+:root {
+    --cream: #FFF4E6;
+    --yellow-soft: #FFE8A3;
+    --yellow-light: #FFF0B3;
+    --brown: #8B5E3C;
+    --brown-dark: #5C3A21;
+    --brown-light: #C8A27C;
+    --white: #ffffff;
+    --shadow: rgba(0,0,0,0.08);
+}
+
+/* =========================
+   BODY
+========================= */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--cream);
+    color: var(--brown-dark);
+    line-height: 1.6;
+}
+
+/* =========================
+   HEADER
+========================= */
+header {
+    background: var(--yellow-soft);
+    padding: 20px;
+    text-align: center;
+    border-bottom: 3px dashed var(--brown);
+}
+
+header h1 {
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    margin: 0 8px;
+    color: var(--brown-dark);
+    font-weight: 600;
+    padding: 8px 14px;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background: var(--brown);
+    color: white;
+}
+
+/* =========================
+   MAIN
+========================= */
+main {
+    padding: 25px;
+}
+
+/* =========================
+   HERO SECTION
+========================= */
+.hero {
+    background: var(--white);
+    padding: 30px;
+    border-radius: 25px;
+    text-align: center;
+    box-shadow: 0 6px 12px var(--shadow);
+    margin-bottom: 25px;
+}
+
+.hero h2 {
+    margin-bottom: 10px;
+}
+
+/* =========================
+   CARD (PROFILE DOSEN)
+========================= */
+.card {
+    background: var(--white);
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 20px;
+    box-shadow: 0 6px 12px var(--shadow);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card h2 {
+    margin-bottom: 10px;
+}
+
+/* =========================
+   TABLE (LIST)
+========================= */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: var(--white);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 6px 12px var(--shadow);
+}
+
+th {
+    background: var(--yellow-soft);
+    color: var(--brown-dark);
+    font-weight: bold;
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+}
+
+tr:nth-child(even) {
+    background: #fffaf2;
+}
+
+/* =========================
+   BUTTON (OPTIONAL)
+========================= */
+.button {
+    display: inline-block;
+    background: var(--brown);
+    color: white;
+    padding: 10px 18px;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.button:hover {
+    background: var(--brown-dark);
+}
+
+/* =========================
+   FOOTER
+========================= */
+footer {
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+    background: var(--yellow-soft);
+    border-top: 3px dashed var(--brown);
+}
+
+/* =========================
+   RESPONSIVE (HP)
+========================= */
+@media (max-width: 768px) {
+
+    header h1 {
+        font-size: 20px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 5px;
+    }
+
+    main {
+        padding: 15px;
+    }
+
+    .hero {
+        padding: 20px;
+    }
+
+    table {
+        font-size: 14px;
+    }
+}
